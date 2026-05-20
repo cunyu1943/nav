@@ -17,7 +17,7 @@
     "primaryColor": "#4a90d9"
   },
   "background": {
-    "texture": "mn-src/grid-me.png",
+    "texture": "mn-src/grid.png",
     "opacity": 0.3
   },
   "iconfont": {
@@ -32,11 +32,16 @@
       "target": "_blank"
     },
     {
-      "name": "演示项目",
+      "name": "🗃️ 开源项目",
       "children": [
         {
-          "name": "momo-nav 仓库",
-          "url": "https://github.com/hcllmsx/momo-nav",
+          "name": "☕ JavaPark",
+          "url": "https://github.com/cunyu1943/JavaPark",
+          "target": "_blank"
+        },
+        {
+          "name": "📰 好物周刊",
+          "url": "https://github.com/cunyu1943/weekly",
           "target": "_blank"
         }
       ]

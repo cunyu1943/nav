@@ -143,7 +143,7 @@ Logo 支持灵活配置，通过 `img`、`text`、`height` 三个可选字段组
 ```json
 {
   "background": {
-    "texture": "mn-src/grid-me.png",
+    "texture": "mn-src/grid.png",
     "opacity": 0.3
   }
 }
