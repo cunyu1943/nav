@@ -1,4 +1,4 @@
-# ❤️ 默默导航 (Momo Nav)
+# ❤️ 村雨遥优选站 (Momo Nav)
 
 一个简洁、美观的静态导航网站，通过 JSON 文件管理链接，轻松添加和分类你的常用网站。
 
@@ -111,7 +111,7 @@ Demo：https://momo-nav.msx.cc.cd/
 
 ## 📝 配置示例
 
-见仓库根目录下 `example.json` 文件。
+见仓库根目录下 `cunyu1943.json` 文件。
 
 ## vercel部署
 

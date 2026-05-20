@@ -1,4 +1,4 @@
-// 默默导航 - 主逻辑脚本
+// 村雨遥优选站 - 主逻辑脚本
 
 // 应用程序版本号
 const APP_VERSION = '2026.05.19.2347';
@@ -228,7 +228,7 @@ function initResponsiveCategoryStickyFallback() {
 }
 // 加载导航数据
 async function loadData() {
-    const dataSources = ['momo-nav.json', 'example.json'];
+    const dataSources = ['momo-nav.json', 'cunyu1943.json'];
     let loadedFrom = '';
     let lastError = null;
 
@@ -294,7 +294,7 @@ async function loadData() {
             container.innerHTML = `
             <div class="no-results">
                 <div class="no-results-icon">⚠️</div>
-                <p>加载数据失败，请检查 momo-nav.json 或 example.json 文件是否存在</p>
+                <p>加载数据失败，请检查 momo-nav.json 或 cunyu1943.json 文件是否存在</p>
                 <p>当前路径：${escapeHtml(window.location.href)}</p>
                 <p style="font-size: 0.85rem; margin-top: 10px;">${escapeHtml(error.message)}</p>
                 <p style="font-size: 0.75rem; color: #999; margin-top: 8px;">提示：请用 HTTP 服务打开页面（例如 Live Server 或 python -m http.server），不要直接使用 file:// 协议。</p>
@@ -302,7 +302,7 @@ async function loadData() {
         `;
         }
     }
-    console.log('默默导航 - github.com/hcllmsx/momo-nav');
+    console.log('村雨遥优选站 - github.com/hcllmsx/momo-nav');
 }
 
 function sanitizeThemeColor(value) {
@@ -431,7 +431,7 @@ async function applySiteConfig(data) {
         // 设置页脚站点名（优先使用 footerName，否则用 siteName）
         const footerSiteName = document.getElementById('footerSiteName');
         if (footerSiteName) {
-            footerSiteName.textContent = data.footerName || data.siteName || '默默导航';
+            footerSiteName.textContent = data.footerName || data.siteName || '村雨遥优选站';
         }
 
         // 设置页脚项目链接的版本提示
@@ -654,7 +654,7 @@ async function applySiteConfig(data) {
         if (logoIcon) logoIcon.textContent = '❤️';
         if (logoText) {
             logoText.style.display = '';
-            logoText.textContent = data.siteName || '默默导航';
+            logoText.textContent = data.siteName || '村雨遥优选站';
         }
     }
 
@@ -966,7 +966,7 @@ function isImageFile(icon) {
 
 // 获取图标 HTML
 // 统一默认图标（带灰度滤镜）
-const DEFAULT_ICON_HTML = `<img src="mn-src/momonav-icon.svg" alt="icon" style="filter: grayscale(100%) brightness(0.7)">`;
+const DEFAULT_ICON_HTML = `<img src="mn-src/logo.png" alt="icon" style="filter: grayscale(100%) brightness(0.7)">`;
 
 function isIconfontIcon(icon) {
     if (!appState.hasIconfontConfig) return false;
@@ -983,10 +983,10 @@ function getIconHtml(icon) {
     // 1. URL 类图标 (http:// https:// /path)
     if (isIconUrl(icon)) {
         if (icon.includes('iconify')) {
-            return `<img src="${escapeHtml(icon)}" alt="icon" loading="lazy" width="24" height="24" onerror="this.src='mn-src/momonav-icon.svg'; this.style.filter='grayscale(100%) brightness(0.7)'">`;
+            return `<img src="${escapeHtml(icon)}" alt="icon" loading="lazy" width="24" height="24" onerror="this.src='mn-src/logo.png'; this.style.filter='grayscale(100%) brightness(0.7)'">`;
         }
         if (isImageFile(icon)) {
-            return `<img src="${escapeHtml(icon)}" alt="icon" loading="lazy" width="24" height="24" onerror="this.src='mn-src/momonav-icon.svg'; this.style.filter='grayscale(100%) brightness(0.7)'">`;
+            return `<img src="${escapeHtml(icon)}" alt="icon" loading="lazy" width="24" height="24" onerror="this.src='mn-src/logo.png'; this.style.filter='grayscale(100%) brightness(0.7)'">`;
         }
     }
 
@@ -1003,7 +1003,7 @@ function getIconHtml(icon) {
 
     // 4. 图片文件路径（无 http 前缀但匹配图片扩展名）
     if (isImageFile(icon)) {
-        return `<img src="${escapeHtml(icon)}" alt="icon" loading="lazy" width="24" height="24" onerror="this.src='mn-src/momonav-icon.svg'; this.style.filter='grayscale(100%) brightness(0.7)'">`;
+        return `<img src="${escapeHtml(icon)}" alt="icon" loading="lazy" width="24" height="24" onerror="this.src='mn-src/logo.png'; this.style.filter='grayscale(100%) brightness(0.7)'">`;
     }
 
     // 5. 其他情况（emoji、纯文本等）直接作为文本输出
@@ -1660,10 +1660,10 @@ function resetPageConfigToDefaults() {
     if (metaThemeColor) metaThemeColor.content = DEFAULT_PAGE_CONFIG.metaThemeColor;
     if (metaDescription) metaDescription.content = DEFAULT_PAGE_CONFIG.siteDescription;
     if (metaKeywords) metaKeywords.content = DEFAULT_PAGE_CONFIG.siteKeywords;
-    if (footerSiteName) footerSiteName.textContent = DEFAULT_PAGE_CONFIG.footerName || '默默导航';
+    if (footerSiteName) footerSiteName.textContent = DEFAULT_PAGE_CONFIG.footerName || '村雨遥优选站';
     if (logoIcon) logoIcon.innerHTML = DEFAULT_PAGE_CONFIG.logoIconHtml;
     if (logoText) {
-        logoText.textContent = DEFAULT_PAGE_CONFIG.logoText || '默默导航';
+        logoText.textContent = DEFAULT_PAGE_CONFIG.logoText || '村雨遥优选站';
         logoText.style.display = DEFAULT_PAGE_CONFIG.logoTextDisplay;
     }
 
@@ -2116,7 +2116,7 @@ function initEditorUi() {
                 <section class="editor-section">
                     <h3>基础信息</h3>
                     <label>siteName<input type="text" data-editor-path="siteName" id="editorFieldSiteName" placeholder="例如：我的导航"></label>
-                    <label>footerName<input type="text" data-editor-path="footerName" id="editorFieldFooterName" placeholder="例如：默默导航"></label>
+                    <label>footerName<input type="text" data-editor-path="footerName" id="editorFieldFooterName" placeholder="例如：村雨遥优选站"></label>
                     <label>siteDescription<textarea rows="3" data-editor-path="siteDescription" id="editorFieldSiteDescription" placeholder="简单描述网站的目的和内容"></textarea></label>
                     <label>siteKeywords<input type="text" data-editor-path="siteKeywords" id="editorFieldSiteKeywords" placeholder="用逗号分隔的关键词，如：工具,资源,导航"></label>
 
@@ -3438,7 +3438,7 @@ function buildSiteManifestFromConfig(config) {
     const defaultPrimaryColor = trimToString(rootStyles.getPropertyValue('--primary-color'));
     const defaultBgColor = trimToString(rootStyles.getPropertyValue('--bg-color'));
 
-    const siteName = trimToString(safeConfig.siteName) || trimToString(document.title) || '默默导航';
+    const siteName = trimToString(safeConfig.siteName) || trimToString(document.title) || '村雨遥优选站';
     const shortName = trimToString(safeConfig.footerName) || siteName;
     const themeColor = sanitizeThemeColor(safeTheme.primaryColor || safeTheme.primary)
         || sanitizeThemeColor(defaultPrimaryColor)
@@ -3510,7 +3510,7 @@ function clearEditorDraftWithConfirm() {
 
 // 重新定义 loadData，支持编辑草稿恢复
 async function loadData() {
-    const dataSources = ['momo-nav.json', 'example.json'];
+    const dataSources = ['momo-nav.json', 'cunyu1943.json'];
     let loadedFrom = '';
     let lastError = null;
     let fileData = null;
@@ -3567,7 +3567,7 @@ async function loadData() {
             container.innerHTML = `
             <div class="no-results">
                 <div class="no-results-icon">⚠️</div>
-                <p>加载数据失败，请检查 momo-nav.json 或 example.json 文件是否存在</p>
+                <p>加载数据失败，请检查 momo-nav.json 或 cunyu1943.json 文件是否存在</p>
                 <p>当前路径：${escapeHtml(window.location.href)}</p>
                 <p style="font-size: 0.85rem; margin-top: 10px;">${escapeHtml(error.message)}</p>
                 <p style="font-size: 0.75rem; color: #999; margin-top: 8px;">提示：请用 HTTP 服务打开页面（例如 Live Server 或 python -m http.server），不要直接使用 file:// 协议。</p>
@@ -3576,7 +3576,7 @@ async function loadData() {
         }
     }
 
-    console.log('默默导航 - github.com/hcllmsx/momo-nav');
+    console.log('村雨遥优选站 - github.com/hcllmsx/momo-nav');
     console.log('按 Ctrl + F9 进入编辑模式');
 }
 

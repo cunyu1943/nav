@@ -1,0 +1,104 @@
+{
+  "siteName": "村雨遥优选站",
+  "footerName": "村雨遥优选站",
+  "siteDescription": "这里是一个导航网站的描述文字",
+  "siteKeywords": "村雨遥优选站,收藏夹,书签,起始页",
+  "favicon": "mn-src/logo.png",
+  "webAppIcons": {
+    "appleTouchIcon": "mn-src/logo.png",
+    "icon192": "mn-src/logo.png",
+    "icon512": "mn-src/logo.png"
+  },
+  "logo": {
+    "img": "mn-src/logo.png",
+    "height": 28
+  },
+  "theme": {
+    "primaryColor": "#4a90d9"
+  },
+  "background": {
+    "texture": "mn-src/grid-me.png",
+    "opacity": 0.3
+  },
+  "iconfont": {
+    "type": "online",
+    "url": "font_5159256_rrq7qj12zp",
+    "prefix": "icon-"
+  },
+  "navLinks": [
+    {
+      "name": "莫莫先生",
+      "url": "https://ihcll.cn",
+      "target": "_blank"
+    },
+    {
+      "name": "演示项目",
+      "children": [
+        {
+          "name": "momo-nav 仓库",
+          "url": "https://github.com/hcllmsx/momo-nav",
+          "target": "_blank"
+        }
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "name": "❤️ 村雨遥",
+      "items": [
+        {
+          "name": "JavaPark",
+          "url": "https://cunyu1943.github.io/JavaPark",
+          "title": "汇聚 Java 学习保姆级教程、求职面试、计算机基础、编程语言、效率工具等诸多内容～",
+          "icon": "https://cunyu1943.github.io/weekly/logo.png"
+        },
+        {
+          "name": "好物周刊",
+          "url": "https://cunyu1943.github.io/weekly",
+          "title": "发现好用的网站、软件、项目、资料、插件等资源",
+          "icon": "https://cunyu1943.github.io/weekly/logo.png"
+        }
+      ]
+    },
+    {
+      "name": "🧰 工具",
+      "items": [
+        {
+          "name": "村雨遥优选站GitHub",
+          "url": "https://github.com/hcllmsx/momo-nav",
+          "title": "村雨遥优选站GitHub仓库",
+          "icon": "https://api.iconify.design/devicon:spring.svg"
+        },
+        {
+          "name": "GitHub",
+          "url": "https://github.com",
+          "title": "代码托管平台",
+          "icon": "https://api.iconify.design/mdi:github.svg",
+          "keywords": [
+            "仓库",
+            "gayhub"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "🎨 设计",
+      "items": [
+        {
+          "name": "iconfont",
+          "url": "https://www.iconfont.cn/",
+          "title": "iconfont图标库",
+          "icon": "icon-iconfont"
+        }
+      ]
+    },
+    {
+      "name": "AI",
+      "items": []
+    },
+    {
+      "name": "新分类",
+      "items": []
+    }
+  ]
+}

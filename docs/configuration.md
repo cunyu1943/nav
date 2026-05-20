@@ -6,15 +6,15 @@
 
 ```json
 {
-  "siteName": "默默导航",
-  "footerName": "默默导航",
+  "siteName": "村雨遥优选站",
+  "footerName": "村雨遥优选站",
   "siteDescription": "便捷的网址导航收藏夹",
   "siteKeywords": "导航,书签,收藏夹",
   "favicon": "https://api.iconify.design/mdi:compass.svg",
   "webAppIcons": {
-    "appleTouchIcon": "mn-src/momonav-icon-180px.png",
-    "icon192": "mn-src/momonav-icon-192px.png",
-    "icon512": "mn-src/momonav-icon-512px.png"
+    "appleTouchIcon": "mn-src/logo.png",
+    "icon192": "mn-src/logo.png",
+    "icon512": "mn-src/logo.png"
   },
   "theme": {
     "primaryColor": "#4a90d9"
@@ -35,8 +35,8 @@
 
 | 字段 | 说明 | 示例 |
 |------|------|------|
-| `siteName` | 网站名称（显示在标题、Logo） | `"默默导航"` |
-| `footerName` | 页脚显示的名称（可选，默认用 siteName） | `"默默导航"` |
+| `siteName` | 网站名称（显示在标题、Logo） | `"村雨遥优选站"` |
+| `footerName` | 页脚显示的名称（可选，默认用 siteName） | `"村雨遥优选站"` |
 | `siteDescription` | 网站描述（SEO用） | `"便捷的网址导航"` |
 | `siteKeywords` | 额外关键词（SEO用，与分类名自动合并去重） | `"导航,书签"` |
 | `favicon` | 浏览器标签页图标（非主屏图标） | `"https://.../icon.svg"` |
@@ -77,8 +77,8 @@ Logo 支持灵活配置，通过 `img`、`text`、`height` 三个可选字段组
 ```json
 {
   "logo": {
-    "img": "mn-src/momonav-text.svg",
-    "text": "默默导航",
+    "img": "mn-src/logo.png",
+    "text": "村雨遥优选站",
     "height": 32
   }
 }
@@ -202,7 +202,7 @@ Logo 支持灵活配置，通过 `img`、`text`、`height` 三个可选字段组
 你可以为导航站设置一个管理密码，用于保护“可视化编辑模式”和“配置文件导出”功能。
 
 > [!IMPORTANT]
-> **配置方式：** 为了安全性，密码**只能**通过手动修改 JSON 配置文件（`momo-nav.json` 或 `example.json`）来设置，可视化面板中不提供修改入口。
+> **配置方式：** 为了安全性，密码**只能**通过手动修改 JSON 配置文件（`momo-nav.json` 或 `cunyu1943.json`）来设置，可视化面板中不提供修改入口。
 
 ```json
 {
@@ -232,9 +232,9 @@ Logo 支持灵活配置，通过 `img`、`text`、`height` 三个可选字段组
 ```json
 {
   "webAppIcons": {
-    "appleTouchIcon": "mn-src/momonav-icon-180px.png",
-    "icon192": "mn-src/momonav-icon-192px.png",
-    "icon512": "mn-src/momonav-icon-512px.png"
+    "appleTouchIcon": "mn-src/logo.png",
+    "icon192": "mn-src/logo.png",
+    "icon512": "mn-src/logo.png"
   }
 }
 ```

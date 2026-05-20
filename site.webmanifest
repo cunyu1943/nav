@@ -7,12 +7,12 @@
   "theme_color": "#fe902a",
   "icons": [
     {
-      "src": "mn-src/momonav-icon-192px.png",
+      "src": "mn-src/logo.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "mn-src/momonav-icon-512px.png",
+      "src": "mn-src/logo.png",
       "sizes": "512x512",
       "type": "image/png"
     }
